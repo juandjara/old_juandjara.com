@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Palomitas",
+    "description":"Series en streaming por torrent",
+    "image": "https://palomitas.fuken.xyz/palomitas-outline.png",
+    "link": "https://palomitas.fuken.xyz"
+  },
+  {
+  	"title": "Palomovies",
+  	"description": "Peliculas en streaming por torrent",
+  	"image":"movie-icon.png",
+  	"link": "https://palomovies.surge.sh"
+  },
+  {
+    "title": "FreeTunes",
+    "description":"Música de fuentes gratuitas",
+    "image": "https://freetunes.fuken.xyz/note.png",
+    "link": "https://freetunes.fuken.xyz"
+  },
+  {
+    "title": "Tetris.js",
+    "description":"El clásico inmortal",
+    "image": "https://juandjara.github.io/tetris/tetris.png",
+    "link": "https://juandjara.github.io/tetris"
+  },
+  {
+    "title": "Snake.js",
+    "description":"Juego del dia siguiente a la Familiar Game Jam 8",
+    "image": "https://juandjara.github.io/snake-game/apple-touch-icon.png",
+    "link": "https://juandjara.github.io/snake-game"
+  },
+  {
+    "title": "Touch drums",
+    "description":"Batería táctil adaptada de un proyecto de javascript30.com",
+    "image": "drum-icon.png",
+    "link": "https://drum.surge.sh"
+  }
+]

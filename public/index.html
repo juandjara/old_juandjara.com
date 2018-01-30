@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#cf4646">
+    <meta name="description" content="Juan D. Jara es un desarrollador de web de Sevilla con interés por el diseño, los videojuegos y cualquier cosa que relacione el arte con la tecnologia">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/avatar.jpg">
+    <link rel="stylesheet" href="global.css">
+    <link async href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link async href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <!-- 
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Juan D. Jara</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+      }
+      @media (min-width: 768px) {
+        body {
+          display: flex;
+          height: 100vh;
+          overflow: hidden;
+        }
+      }
+      h1, h2, h3 {
+        font-weight: normal;
+      }
+      noscript {
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <header>
+        <a href="#hola">
+        <img src="/avatar.jpg" alt="Profile Picture">
+        <h1>Juan D. Jara</h1>
+        <p>Desarrollador web</p>
+        </a>
+      </header>
+      <nav>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </aside>
+    <main>
+      <div class="content">
+        <noscript>
+          You need to enable JavaScript to run this app.
+        </noscript>
+        <!-- TODO: Message saying "this apps works online" -->
+        <h1 id="hola">Hola. Bienvenido a mi página web</h1>
+        <p>
+          Juan D. Jara es un <strong>desarrollador web</strong> de Sevilla con interés por el <strong>diseño</strong>, los <strong>videojuegos</strong> y cualquier cosa que relacione el <strong>arte</strong> con la <strong>tecnologia</strong>.
+          Se dedica a crear aplicaciones web útiles. agradables y faciles de usar.
+          Además, no siempre habla de si mismo en tercera persona. 
+        </p>
+        <h2 id="proyectos">Proyectos</h2>
+        <p>Cosas que no existian en internet o que me apeteció crear en su momento y ahora quiero mostrarlas al mundo</p>
+        <div id="root">
+          <div class="loadingspinner"></div>
+        </div>
+        <h2 id="contacto">Contacto</h2>
+        <p>Aqu&iacute; puedes <a href="CV-juandjara.pdf">descargar mi curriculum</a>. Mi correo es <a href="mailto:juanorigami@gmail.com">juanorigami@gmail.com</a> y suelo ver la mayoria de los emails que me llegan. En los iconos de abajo puedes ver mis redes sociales.</p>
+        <a class="contact" href="https://twitter.com/fukeneltuerto"><i class="fa fa-twitter"></i></a>
+        <a class="contact" href="https://facebook.com/juan.origami"><i class="fa fa-facebook"></i></a>
+        <a class="contact" href="https://instagram.com/originalfuken"><i class="fa fa-instagram"></i></a>
+        <a class="contact" href="https://www.linkedin.com/in/juandjara/"><i class="fa fa-linkedin"></i></a>
+        <a class="contact" href="https://github.com/juandjara"><i class="fa fa-github"></i></a>
+        <footer>
+          <p>
+            Diseñado y desarrollado por Juan D. Jara en 2018
+          </p>
+          <a href="https://github.com/juandjara/juandjara.com">
+            Código fuente del sitio web en Github
+          </a>
+        </footer>
+      </div>
+    </main>
+    <!-- 
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
