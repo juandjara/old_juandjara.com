@@ -11,7 +11,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/avatar.jpg">
-    <link rel="stylesheet" href="global.css">
+    <link async href="global.css" rel="stylesheet">
     <link async href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link async href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
@@ -61,6 +61,16 @@
       </nav>
     </aside>
     <main>
+      <button title="Limpiar lienzo" class="clear" onclick="clearCanvas()" hidden>
+        <i class="fa fa-close"></i>
+      </button>
+      <button title="Cerrar lienzo" class="close" onclick="toggleCanvas()" hidden>
+        <i class="fa fa-compress"></i>
+      </button>
+      <button title="Pintar en esta pagina" class="open" onclick="toggleCanvas()">
+        <i class="fa fa-pencil"></i>
+      </button>      
+      <canvas hidden></canvas>
       <div class="content">
         <noscript>
           You need to enable JavaScript to run this app.
