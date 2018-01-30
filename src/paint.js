@@ -9,7 +9,6 @@ function getPoint(ev) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const canvas = document.querySelector('canvas');
-  const aside  = document.querySelector('aside');
   const clearButton = document.querySelector('button.clear');
   const closeButton = document.querySelector('button.close');
   const openButton = document.querySelector('button.open');
