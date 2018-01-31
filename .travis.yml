@@ -8,4 +8,6 @@ deploy:
   provider: surge
   project: ./build/
   domain: fuken.xyz
+after_success:
+  - npm run deploy
 skip_cleanup: true
