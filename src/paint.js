@@ -19,25 +19,32 @@ window.addEventListener('DOMContentLoaded', () => {
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
 
-  canvas.addEventListener('mousedown touchstart', (ev) => {
+  function start(ev) {
     clickHold = true;
     const {x,y} = getPoint(ev);
     context.beginPath();
     context.moveTo(x, y);
-  }, false);
-  canvas.addEventListener('mousemove touchmove', (ev) => {
+  }
+  function move(ev) {
     if(!clickHold) {
       return;
     }
     const {x,y} = getPoint(ev);          
     context.lineTo(x, y);
     context.stroke();
-  }, false);
-  canvas.addEventListener('mouseup touchend', () => {
+  }
+  function end() {
     clickHold = false;
     context.closePath();
-  }, false);
-
+  }
+  
+  canvas.addEventListener('mousedown', start, false);  
+  canvas.addEventListener('touchstart', start, false);  
+  canvas.addEventListener('mousemove', move, false);  
+  canvas.addEventListener('touchmove', move, false);  
+  canvas.addEventListener('mouseup', end, false);
+  canvas.addEventListener('touchend', end, false);
+  
   window.toggleCanvas = () => {
     canvas.hidden = !canvas.hidden;
     clearButton.hidden = !clearButton.hidden;
