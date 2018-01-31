@@ -1,6 +1,9 @@
 let clickHold = false;
 
 function getPoint(ev) {
+  if('ontouchstart' in window && ev.touches[0]) {
+    ev = ev.touches[0]
+  }
   return {
     x: ev.clientX,
     y: ev.clientY
@@ -16,13 +19,13 @@ window.addEventListener('DOMContentLoaded', () => {
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
 
-  canvas.addEventListener('mousedown', (ev) => {
+  canvas.addEventListener('mousedown touchstart', (ev) => {
     clickHold = true;
     const {x,y} = getPoint(ev);
     context.beginPath();
     context.moveTo(x, y);
   }, false);
-  canvas.addEventListener('mousemove', (ev) => {
+  canvas.addEventListener('mousemove touchmove', (ev) => {
     if(!clickHold) {
       return;
     }
@@ -30,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     context.lineTo(x, y);
     context.stroke();
   }, false);
-  canvas.addEventListener('mouseup', () => {
+  canvas.addEventListener('mouseup touchend', () => {
     clickHold = false;
     context.closePath();
   }, false);
