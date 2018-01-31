@@ -29,6 +29,7 @@ aside header h1 + p {
 }
 aside nav {
   padding: 1em 0;
+  text-align: right;
 }
 aside nav a {
   display: block;
@@ -55,6 +56,7 @@ a:hover {
   }
   aside nav {
     padding: 0;
+    margin-right: 35px;
   }
   aside nav a {
     display: inline-block;
@@ -78,6 +80,12 @@ a:hover {
 @media(max-width: 600px) {
   aside header h1 {
     display: none;
+  }
+  aside header img {
+    margin: 0;
+  }
+  aside nav a {
+    padding: 6px;
   }
 }
 main {
