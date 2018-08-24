@@ -1,19 +1,25 @@
 [
   {
     "title": "Palomitas",
-    "description":"Series en streaming por torrent",
+    "description":"Series en streaming por torrents",
     "image": "https://palomitas.fuken.xyz/palomitas-outline.png",
     "link": "https://palomitas.fuken.xyz"
   },
   {
   	"title": "Palomovies",
-  	"description": "Peliculas en streaming por torrent",
+  	"description": "Peliculas en streaming por torrents",
   	"image":"movie-icon.png",
   	"link": "https://palomovies.surge.sh"
   },
   {
-    "title": "FreeTunes",
-    "description":"Música de fuentes gratuitas",
+    "title": "Dibujitos",
+    "description": "Anime en streaming por torrents",
+    "image": "https://dibujitos.fuken.xyz/favicon-96x96.png",
+    "link": "https://dibujitos.fuken.xyz"
+  },
+  {
+    "title": "Freetunes",
+    "description":"Escucha musica de youtube en segundo plano en tu movil",
     "image": "https://freetunes.fuken.xyz/note.png",
     "link": "https://freetunes.fuken.xyz"
   },
