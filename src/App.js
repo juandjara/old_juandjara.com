@@ -4,8 +4,11 @@ import projects from './projects.json';
 function App() {
   return (
     <ul>
-      {projects.map(project => (
-        <li key={project.link}>
+      {projects.map((project, index) => (
+        <li key={project.link} 
+          style={{
+            animationDelay: `${index / 5}s`
+          }}>
           <a href={project.link}>
             <img src={project.image} alt=""/>
             <div>

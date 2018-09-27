@@ -24,7 +24,8 @@ aside header a {
   color: white;
 }
 aside header h1 + p {
-  margin-top: 10px;
+  margin-top: 6px;
+  margin-bottom: 24px;
   opacity: .75;
 }
 aside nav {
@@ -98,6 +99,19 @@ main {
   padding: 0 1em;
   max-width: 768px;
   margin: 0 auto;
+  text-align: justify;
+}
+.content h1 {
+  margin-bottom: 48px;
+  font-size: 40px;
+}
+.content h2 {
+  margin-bottom: 12px;
+}
+.content h2 + p {
+  margin-top: 12px;
+  margin-bottom: 32px;
+  line-height: 1.5;
 }
 
 .contact {
@@ -122,10 +136,13 @@ footer {
 ul {
   list-style: none;
   padding: 0;
-  margin: 2em 0;
+  margin: 32px 0;
 }
 li {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  animation: appear-li 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 li a {
   display: flex;
@@ -138,13 +155,18 @@ li a:hover {
 }
 li img {
   width: 80px;
-  margin-right: 20px;
+  height: 80px;
+  margin-right: 24px;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
 li h3 {
   margin-bottom: 0;
+  font-weight: bold;
 }
 li div p {
-  margin-top: .5em;
+  margin-top: .25em;
   color: initial;
 }
 
@@ -196,4 +218,15 @@ button {
 }
 .clear {
   right: 40px;
+}
+
+@keyframes appear-li {
+  from {
+    opacity: 0;
+    transform: translateY(calc(-100% - 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
