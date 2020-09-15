@@ -40,5 +40,17 @@
     "description":"Batería táctil adaptada de un proyecto de javascript30.com",
     "image": "drum-icon.png",
     "link": "https://drum.surge.sh"
+  },
+  {
+    "title": "Asociación Guardianes",
+    "description": "Portal web de la Asociacion de ocio alternativo Guardianes de Sevilla",
+    "image": "https://asoguardianes.com/images/escudo-fullcolor.png",
+    "link": "https://asoguardianes.com"
+  },
+  {
+    "title": "Guardianes del Rol",
+    "description": "Portal para organizar las partidas de juegos de rol de la asociación Guardianes de Sevilla",
+    "image": "https://asoguardianes.com/images/escudo-fullcolor.png",
+    "link": "https://guardianesdelrol.now.sh"
   }
 ]

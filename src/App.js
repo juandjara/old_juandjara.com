@@ -7,7 +7,7 @@ function App() {
       {projects.map((project, index) => (
         <li key={project.link} 
           style={{
-            animationDelay: `${index / 5}s`
+            animationDelay: `${index / projects.length}s`
           }}>
           <a href={project.link}>
             <img src={project.image} alt=""/>
